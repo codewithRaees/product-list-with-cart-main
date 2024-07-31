@@ -7,8 +7,8 @@ function ProductCards() {
 
   return (
     <>
-      {ProductData.map((singleProduct) => (
-        <div className="card">
+      {ProductData.map((singleProduct, i) => (
+        <div className="card" key={i}>
           <img
             className="rounded-md h-52"
             src={Object.values(singleProduct.image)[3]}
