@@ -5,9 +5,6 @@ import ProductData from "../../data.json";
 function ProductCards() {
   const [product, setProduct] = useState(ProductData);
 
-  ProductData.map((product) => {
-    console.log(Object.values(product.image)[3]);
-  });
   return (
     <>
       {ProductData.map((singleProduct) => (
