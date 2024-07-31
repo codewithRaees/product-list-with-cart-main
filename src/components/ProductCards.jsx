@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
-import ProductData from "../../data.json";
+import ProductData from "../../data";
 
 function ProductCards() {
   const [product, setProduct] = useState(ProductData);
