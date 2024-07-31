@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import { LuTrees } from "react-icons/lu";
 
 function ItemsCart() {
   return (
@@ -68,8 +69,9 @@ function ItemsCart() {
           <span>Order Total</span>
           <span>$46.50</span>
         </div>
-        <div className="bg-[#FCF8F5] mb-7 px-5 py-5 rounded-md go-green-text">
-          <span>This is a carbon neutral delivery</span>
+        <div className="flex items-center bg-[#FCF8F5] mb-7 px-5 py-5 rounded-md go-green-text">
+          <LuTrees className="text-green-400 text-xl" />
+          <span className="ml-2">This is a carbon neutral delivery</span>
         </div>
         <div className="flex justify-center items-center bg-[#C22E08] px-5 py-4 rounded-full text-white btn-submit">
           Confirm Order
