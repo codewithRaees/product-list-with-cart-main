@@ -15,7 +15,7 @@ function App() {
           <h1 className="py-5 font-extrabold text-4xl text-black sty">
             Desserts
           </h1>
-          <div className="flex flex-wrap gap-8 card-list">
+          <div className="flex flex-wrap justify-center items-center gap-8 card-list">
             <ProductCards
               products={products}
               setCart={setCart}
@@ -24,7 +24,7 @@ function App() {
             />
           </div>
         </div>
-        <div className="w-[1000px] cart-container">
+        <div className="items-center min-w-96 cart-container">
           <ItemsCart cart={cart} />
         </div>
       </main>

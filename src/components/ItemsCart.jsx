@@ -26,7 +26,7 @@ function ItemsCart({ cart }) {
                   </li>
                 </ul>
                 <div className="-top-3 right-5 absolute close-icon">
-                  <IoMdCloseCircleOutline className="text-[#9D938F] text-3xl" />
+                  <IoMdCloseCircleOutline className="text-[#9D938F] text-2xl" />
                 </div>
               </div>
               <hr></hr>
