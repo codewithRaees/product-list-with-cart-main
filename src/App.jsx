@@ -6,9 +6,8 @@ import ProductsData from "../data.js";
 
 function App() {
   const [products, setProducts] = useState(ProductsData);
-  const [addToCart, setaddToCart] = useState([]);
-
-  console.log(addToCart);
+  const [cart, setCart] = useState([]);
+  const [count, setCount] = useState();
   return (
     <>
       <main className="flex md:flex-row flex-col bg-[#FCF8F5] px-20 py-10">
@@ -19,13 +18,14 @@ function App() {
           <div className="flex flex-wrap gap-8 card-list">
             <ProductCards
               products={products}
-              setaddToCart={setaddToCart}
-              addToCart={addToCart}
+              setCart={setCart}
+              cart={cart}
+              setCount={setCount}
             />
           </div>
         </div>
         <div className="w-[1000px] cart-container">
-          <ItemsCart addToCart={addToCart} />
+          <ItemsCart cart={cart} />
         </div>
       </main>
     </>
