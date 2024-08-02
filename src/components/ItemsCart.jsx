@@ -21,7 +21,9 @@ function ItemsCart({ cart }) {
                 <ul className="flex text-sm">
                   <li className="px-3 text-[#C22E08]">{item.quantity} x</li>
                   <li className="px-3 text-[#9D938F]">@ ${item.price}</li>
-                  <li className="px-3 font-bold text-[#726d6c]">$ 5.50</li>
+                  <li className="px-3 font-bold text-[#726d6c]">
+                    $ {item.quantity * item.price}
+                  </li>
                 </ul>
                 <div className="-top-3 right-5 absolute close-icon">
                   <IoMdCloseCircleOutline className="text-[#9D938F] text-3xl" />
