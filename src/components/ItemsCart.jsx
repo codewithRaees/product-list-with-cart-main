@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { LuTrees } from "react-icons/lu";
 import BlankCart from "./BlankCart";
+import ConfirmOrderPopup from "./ConfirmOrderPopup";
 
 function ItemsCart({ cart }) {
-  // console.log(cart.map((el) => el.quantity));
+  const [isOpen, setisOpen] = useState(false);
+
   return (
     <>
       {cart.length === 0 ? (
@@ -50,8 +52,16 @@ function ItemsCart({ cart }) {
             <LuTrees className="text-green-400 text-xl" />
             <span className="ml-2">This is a carbon neutral delivery</span>
           </div>
-          <div className="flex justify-center items-center bg-[#C22E08] px-5 py-4 rounded-full text-white btn-submit">
+          <div
+            onClick={() => setisOpen(true)}
+            className="flex justify-center items-center bg-[#C22E08] px-5 py-4 rounded-full text-white cursor-pointer btn-submit"
+          >
             Confirm Order
+            <ConfirmOrderPopup
+              isOpen={isOpen}
+              setisOpen={setisOpen}
+              cart={cart}
+            />
           </div>
         </div>
       )}

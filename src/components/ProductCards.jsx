@@ -55,11 +55,11 @@ function ProductCards({ products, setCart, cart }) {
                 {singleProduct.name}
               </h1>
               <p className="font-bold text-[#C22E08]">${singleProduct.price}</p>
-              <div className="-top-5 left-8 absolute cursor-pointer btn-cart">
+              <div className="-top-5 left-7 absolute min-w-40 cursor-pointer btn-cart">
                 {productInCart ? (
                   <div
                     key={i}
-                    className="flex items-center border-color-[#AEA5A3] bg-red-500 px-5 py-2 border rounded-full min-w-36"
+                    className="flex justify-around items-center border-color-[#AEA5A3] bg-[#C22E08] py-2 rounded-full"
                   >
                     <CiCircleMinus
                       className="text-2xl text-white"
