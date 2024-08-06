@@ -45,7 +45,7 @@ function ProductCards({ products, setCart, cart }) {
         return (
           <div className="card" key={i}>
             <img
-              className="rounded-md h-52"
+              className="rounded-md min-w-[220px] h-52"
               src={Object.values(singleProduct.image)[3]}
               alt="Product Image"
             />

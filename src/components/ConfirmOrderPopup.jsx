@@ -41,8 +41,8 @@ const ConfirmOrderPopup = ({ isOpen, setisOpen, cart }) => {
             <div className="sm:mx-auto mt-2 sm:w-full">
               <div className="bg-white py-1 rounded-md itemcart">
                 <div className="bg-[#FCF8F5] item-main py- rounded-md">
-                  {cart.map((cartItems) => (
-                    <div className="div">
+                  {cart.map((cartItems, i) => (
+                    <div className="div" key={i}>
                       <div className="flex items-center gap-3 order-Detail px-2 py-3">
                         <div className="icon">
                           <img
