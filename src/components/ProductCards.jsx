@@ -78,6 +78,7 @@ function ProductCards({ products, setCart, cart }) {
                     key={i}
                     onClick={() => {
                       handleProductSelect(singleProduct);
+                      localStorage.setItem("cartItem", "Cart Added items");
                     }}
                     className="flex items-center border-color-[#AEA5A3] bg-[#FCFFFF] px-5 py-2 border rounded-full"
                   >

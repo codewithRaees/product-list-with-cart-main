@@ -85,7 +85,13 @@ const ConfirmOrderPopup = ({ isOpen, setisOpen, cart }) => {
                   </span>
                 </div>
 
-                <div className="flex justify-center items-center bg-[#C22E08] px-5 py-2 rounded-full text-white cursor-pointer btn-submit">
+                <div
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setisOpen(false);
+                  }}
+                  className="flex justify-center items-center bg-[#C22E08] px-5 py-2 rounded-full text-white cursor-pointer btn-submit"
+                >
                   Start new Order
                 </div>
               </div>
